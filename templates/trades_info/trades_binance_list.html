@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trades Binance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .logout-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var preloader = document.querySelector('.preloader');
+      setTimeout(() => { preloader.style.display = "none"; }, 600);
+
+      function generateFormLogOut () {
+        var form = document.createElement('form');
+        form.setAttribute('method', 'post');
+        form.setAttribute('action', '{% url 'account_logout' %}');
+        var csrf_input = document.createElement('input');
+        csrf_input.setAttribute('type', 'hidden');
+        csrf_input.setAttribute('name', 'csrfmiddlewaretoken');
+        csrf_input.setAttribute('value', '{{ csrf_token }}');
+        form.appendChild(csrf_input);
+        form.style.display = 'hidden';
+        document.body.appendChild(form)
+        form.submit();
+      }
+    </script>
+    <div class="container position-relative">
+        <h1>Welcome, {{ request.user.username }}!</h1>
+        <h2>Your Balance: {{ request.user.balance }}</h2>
+
+        <p><a href="{% url 'admin:index' %}">Go to Admin Panel</a></p>
+        <p><a href="{% url 'trade_info:main' %}">Go to USDT Wallet</a></p>
+        <p><a href="{% url 'trade_info:coinm' %}">Go to COIN-M Wallet</a></p>
+
+        <p><a onclick="generateFormLogOut()" class="btn btn-outline-primary logout-btn">Logout</a></p>
+
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>Тикер</th>
+                    <th>Дата входа</th>
+                    <th>Вход</th>
+                    <th>Дата выхода</th>
+                    <th>Выход</th>
+                    <th>Сторона</th>
+                    <th>Прибыль</th>
+                    <th>Комиссия</th>
+                    <th>Чистая прибыль</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for trade in trades_binance %}
+                <tr>
+                    <td>{{ trade.symbol.name }}</td>
+                    <td>{{ trade.open_datetime }}</td>
+                    <td>{{ trade.open_price }}</td>
+                    <td>{{ trade.close_datetime }}</td>
+                    <td>{{ trade.close_price }}</td>
+                    <td>{{ trade.position_side.name }}</td>
+                    <td>{{ trade.realized_pnl }}</td>
+                    <td>{{ trade.commission }}</td>
+                    <td>{{ trade.net_profit }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

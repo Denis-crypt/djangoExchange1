@@ -1,0 +1,23 @@
+{% extends 'account/base.html' %}
+
+{% block content %}
+    <section class="section bg">
+      <div class="container">
+        <div class="row">
+            <form action="{% url 'account_login' %}" class="form" method="POST">
+            {% csrf_token %}
+              {% for field in form %}
+                  {% if not forloop.last %}
+                    <div class="form-group">
+                        {{ field.errors }}
+                        {{ field.label_tag }} {{ field }}
+                    </div>
+                  {% endif %}
+            {% endfor %}
+              <button type="submit">Войти</button>
+            </form>
+
+        </div>
+      </div>
+    </section>
+{% endblock content %}

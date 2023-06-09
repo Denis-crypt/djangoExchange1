@@ -1,0 +1,402 @@
+{% load static %}
+{% load for_user %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+
+  <meta charset="utf-8">
+  <title>ITG | International Trade Group</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <meta name="generator" content="Hugo 0.105.0-DEV" />
+
+
+  <link rel="canonical" href=".." />
+
+
+
+
+  <meta property="og:title" content="ITG | International Trade Group">
+  <meta property="og:description" content="">
+
+  <meta property="og:image:height" content="...">
+  <meta property="og:image:width" content="...">
+  <meta property="og:image" content="fav/screenshot.jpg">
+
+  <meta property="fb:app_id" content="...">
+  <meta property="fb:admins" content="">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ITG | International Trade Group">
+  <meta property="og:url" content="/">
+
+  <meta name="twitter:title" content="ITG | International Trade Group" />
+  <meta name="twitter:url" content="/" />
+  <meta name="twitter:image" content="{% static 'fav/screenshot.jpg' %}" />
+  <meta name="twitter:card" content="" />
+
+
+
+  <meta name="twitter:card" content="...">
+
+  <meta name="twitter:site" content="/">
+  <meta name="twitter:creator" content="">
+
+  <meta name="twitter:title" content="ITG | International Trade Group">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image:src" content="...">
+
+
+
+  <meta itemprop="name" content="/">
+  <meta itemprop="description" content="">
+  <meta itemprop="image" content="...">
+
+
+  <link href="{% static 'fav/minilogo.ico' %}" rel="shortcut icon" type="image/x-icon" />
+  <link href="{% static 'fav/minilogo.ico' %}" rel="icon" type="image/x-icon" />
+
+
+  <link rel="shortcut icon" href="{% static 'fav/favicon.png' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'fav/favicon.png' %}" type="image/x-icon">
+
+  <link rel="apple-touch-icon" sizes="144x144" href="{% static 'fav/apple-touch-icon.jpg' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'fav/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'fav/favicon-16x16.png' %}">
+  <link rel="mask-icon" href="{% static 'fav/safari-pinned-tab.svg' %}" color="#fff">
+
+  <link rel="manifest" href="{% static 'fav/site.webmanifest' %}">
+  <link rel="mask-icon" href="{% static 'fav/safari-pinned-tab.svg' %}" color="#3a1b70">
+  <meta name="msapplication-TileColor" content="#3a1b70">
+  <meta name="theme-color" content="#3a1b70">
+
+  <meta name="facebook-domain-verification" content="chcxsmb13vcz0c179zis348teqrr2m" />
+
+
+  <!-- Main Stylesheet -->
+
+  <link rel="stylesheet" href="{% static 'scss/main.min.css' %}?v=11-09-2022-117-69-96" media="screen">
+  <!-- plugins -->
+
+  <!-- Custom Stylesheet -->
+
+  <link rel="stylesheet" href="{% static 'scss/custom.min.css' %}?v=11-09-2022-117-69-96" media="screen">
+
+
+</head>
+
+<body lang="ru" class="page__body">
+
+  <main class="page__wrap">
+    <div class="preloader">
+      <div class="preloader-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+
+    <script>
+      var preloader = document.querySelector('.preloader');
+      setTimeout(() => { preloader.style.display = "none"; }, 600);
+
+      function generateFormLogOut () {
+        var form = document.createElement('form');
+        form.setAttribute('method', 'post');
+        form.setAttribute('action', '{% url 'account_logout' %}');
+        var csrf_input = document.createElement('input');
+        csrf_input.setAttribute('type', 'hidden');
+        csrf_input.setAttribute('name', 'csrfmiddlewaretoken');
+        csrf_input.setAttribute('value', '{{ csrf_token }}');
+        form.appendChild(csrf_input);
+        form.style.display = 'hidden';
+        document.body.appendChild(form)
+        form.submit();
+      }
+
+      function generateFormRequestOutput () {
+        var form = document.createElement('form');
+        form.setAttribute('method', 'post');
+        form.setAttribute('action', '{% url 'authorization:send_output_request' %}');
+        var csrf_input = document.createElement('input');
+        csrf_input.setAttribute('type', 'hidden');
+        csrf_input.setAttribute('name', 'csrfmiddlewaretoken');
+        csrf_input.setAttribute('value', '{{ csrf_token }}');
+        form.appendChild(csrf_input);
+        form.style.display = 'hidden';
+        document.body.appendChild(form)
+        form.submit();
+      }
+    </script>
+    <div class="header-span"></div>
+
+
+
+    <style>
+    </style>
+
+
+
+    <!-- Hero Section -->
+    <!-- End of Hero Section -->
+
+    <section class="section section_1">
+
+      <header class="header">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-between">
+            <nav class="navbar navbar-expand-lg w-100">
+
+
+
+
+              <a class="logo" href="..">
+
+
+
+
+                <img src="{% static 'images/logo.png' %}" alt="" width="71" height="40">
+
+
+
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg class="icon icon-menu" width="20" height="20">
+                  <use xlink:href="#menu"></use>
+                </svg>
+                <svg class="icon icon-close d-none" width="20" height="20">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              </div>
+
+              <div class="header__btns">
+                <span class="">Добро пожаловать, {{ request.user.username }}
+                </span>
+                  {% if request.user.is_staff or request.user.is_superuser %}
+                    <a href="{% url 'admin:index' %}" class="btn btn--white">Admin</a>
+                  {% endif %}
+                  <input type="submit" class="btn btn--white" value="{% trans 'Sign Out' %}" onclick="generateFormLogOut()"/>
+{#                <a href="{% url 'account_logout' %}" class="btn btn--white">Выйти</a>#}
+              </div>
+
+
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+
+      <script>
+        let close = document.querySelector('.icon-close');
+        let menu = document.querySelector('.icon-menu');
+
+        menu.addEventListener('click', function () {
+          this.classList.toggle('d-none');
+          close.classList.remove('d-none');
+        })
+        close.addEventListener('click', function () {
+          this.classList.toggle('d-none');
+          menu.classList.remove('d-none');
+        })
+
+
+      </script>
+
+
+      <div class="container">
+        <div class="row row--1">
+          <div class="col-lg-5">
+            <div class="card">
+              <div class="card__title">
+                Депозит:
+              </div>
+              <div class="card__text">
+                ${{ request.user.balance|floatformat:2 }}
+              </div>
+            </div>
+              <div class="card">
+              <div class="card__title">
+                Текущий доход:
+              </div>
+              <div class="card__text">
+                ${{ request.user.current_income|floatformat:2 }}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card my-0">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card__title">
+                    Доход:
+                  </div>
+                  <div class="card__text">
+                      {% get_my_realized_pnl tradebinanceusdt_list as realized_pnl %}
+                      ${{ realized_pnl|floatformat:2 }}
+                  </div>
+                </div>
+                <div class="col-md-8 mt-3 mt-md-0">
+                  <div class="card__title">
+                    Период:
+                  </div>
+                    <form method="get">
+                        {% for field in form %}
+                          <div class="card__box">
+                              {{ field }}
+                          </div>
+                        {% endfor %}
+                         <input type="submit" class="btn btn--white" value="Поиск">
+                    </form>
+                </div>
+              </div>
+
+            </div>
+          {% is_user_can_output_profit request.user as is_can_output %}
+            <div class="card__footer">
+              <div class="card__label">
+                <a href="#" class="btn card__btn" {% if not is_can_output %}disabled{% else %} data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="generateFormRequestOutput()"{% endif %}>Запрос на вывод</a>
+                {% if not is_can_output %}<span class="card__label--error">*Вы уже делали запрос в этом месяце </span>{% endif %}
+              </div>
+              <div class="card__label">
+                <a href="#" class="btn card__btn" data-bs-toggle="modal" data-bs-target="#historyModal">История
+                  выводов</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section_2">
+      <div class="container">
+        <h1>Список сделок:</h1>
+        <div class="table__wrap">
+            {% if usertransaction_list %}
+              <table class="table">
+                <tr>
+                  <th>Тикер</th>
+                  <th>Дата входа</th>
+                  <th>Вход</th>
+                  <th>Дата выхода</th>
+                  <th>Выход</th>
+                  <th>Сторона</th>
+                  <th>Прибыль</th>
+                </tr>
+                {% for trade in trades_binance_usdt %}
+                    <tr>
+                      <td>{{ trade.symbol.name }}</td>
+                      <td>{{ trade.open_datetime }}</td>
+                      <td>{{ trade.open_price }}</td>
+                      <td>{{ trade.close_datetime }}</td>
+                      <td>{{ trade.close_price }}</td>
+                      <td>{{ trade.position_side.name }}</td>
+                      <td>{{ trade.realized_pnl }}</td>
+                    </tr>
+                {% endfor %}
+              </table>
+            {% else %}
+                <p>Не найдено транзакций за указанный диапазон дат.</p>
+            {% endif %}
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+          <div class="modal-body">
+            <h2 class="modal__title">
+              Спасибо
+            </h2>
+            <p class="modal__text">
+              Ваш запрос был отправлен.
+            </p>
+            <p class="modal__text">
+              Мы обработаем его в ближайшее время.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    {% get_user_output_history request.user as outputs_list %}
+    <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+          <div class="modal-body">
+            <h2 class="modal__title">
+              История выводов
+            </h2>
+              {% for output in outputs_list %}
+                <p class="modal__text">
+                  ${{ output.output_sum|floatformat:2 }} | {{ output.datetime_output }}
+                </p>
+              {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+  <script src="{% static 'plugins/js/bootstrap.bundle.min.js' %}"></script>
+
+  <script src="{% static 'plugins/js/jquery.min.js' %}"></script>
+
+  {{ form.media }}
+
+
+
+  <script src="{% static 'js/script.min.js' %}?v=%2011-09-2022-117-69-96"></script><svg width="0" height="0" class="hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 15" id="menu">
+      <path d="M1.97656 1.97485H17.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      </path>
+      <path d="M1.97656 7.97485H17.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      </path>
+      <path d="M1.97656 13.9749H17.9766" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      </path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="close">
+      <path
+        d="M16.3887 0.290956L9.00094 7.67954L1.61314 0.290956C1.43545 0.128339 1.20188 0.0405543 0.961087 0.0458903C0.72029 0.0512262 0.490836 0.149271 0.320525 0.3196C0.150215 0.489929 0.0521799 0.719407 0.0468446 0.96023C0.0415092 1.20105 0.129284 1.43465 0.291884 1.61235L7.67593 9.00094L0.29001 16.3876C0.199776 16.4736 0.127643 16.5768 0.0778516 16.6911C0.0280603 16.8054 0.00161536 16.9285 7.17197e-05 17.0531C-0.00147192 17.1778 0.0219169 17.3015 0.0688628 17.417C0.115809 17.5324 0.185364 17.6374 0.273442 17.7256C0.361519 17.8138 0.46634 17.8835 0.581743 17.9306C0.697146 17.9777 0.820803 18.0013 0.945444 17.9999C1.07008 17.9986 1.19319 17.9723 1.30754 17.9227C1.42188 17.873 1.52515 17.801 1.61127 17.7109L9.00094 10.3242L16.3887 17.7128C16.5664 17.8754 16.8 17.9632 17.0408 17.9579C17.2816 17.9525 17.511 17.8545 17.6813 17.6842C17.8517 17.5138 17.9497 17.2843 17.955 17.0435C17.9604 16.8027 17.8726 16.5691 17.71 16.3914L10.3222 9.00281L17.71 1.61235C17.8002 1.52635 17.8724 1.42318 17.9221 1.30889C17.9719 1.19461 17.9984 1.07152 17.9999 0.94687C18.0015 0.822218 17.9781 0.698515 17.9311 0.583033C17.8842 0.467551 17.8146 0.36262 17.7266 0.274408C17.6385 0.186196 17.5337 0.116484 17.4183 0.0693699C17.3029 0.0222553 17.1792 -0.00131087 17.0546 5.62491e-05C16.9299 0.00142337 16.8068 0.0276964 16.6925 0.077331C16.5781 0.126966 16.4749 0.19896 16.3887 0.289082V0.290956Z"
+        fill="#fff"></path>
+    </symbol>
+  </svg>
+
+
+
+</body>
+
+</html>

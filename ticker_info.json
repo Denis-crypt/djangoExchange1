@@ -1,0 +1,374 @@
+[
+    {
+        "symbol": "RUNEUSD_PERP",
+        "ps": "RUNEUSD",
+        "price": "1.1240",
+        "time": 1685527558247
+    },
+    {
+        "symbol": "AVAXUSD_PERP",
+        "ps": "AVAXUSD",
+        "price": "14.14",
+        "time": 1685527933864
+    },
+    {
+        "symbol": "FILUSD_PERP",
+        "ps": "FILUSD",
+        "price": "4.683",
+        "time": 1685528019679
+    },
+    {
+        "symbol": "FTMUSD_PERP",
+        "ps": "FTMUSD",
+        "price": "0.3170",
+        "time": 1685527974639
+    },
+    {
+        "symbol": "ETHUSD_230929",
+        "ps": "ETHUSD",
+        "price": "1887.57",
+        "time": 1685528014263
+    },
+    {
+        "symbol": "MANAUSD_PERP",
+        "ps": "MANAUSD",
+        "price": "0.4642",
+        "time": 1685527750617
+    },
+    {
+        "symbol": "EOSUSD_PERP",
+        "ps": "EOSUSD",
+        "price": "0.889",
+        "time": 1685527639367
+    },
+    {
+        "symbol": "BTCUSD_230929",
+        "ps": "BTCUSD",
+        "price": "27487.9",
+        "time": 1685528045546
+    },
+    {
+        "symbol": "XMRUSD_PERP",
+        "ps": "XMRUSD",
+        "price": "150.85",
+        "time": 1685527811191
+    },
+    {
+        "symbol": "LINKUSD_PERP",
+        "ps": "LINKUSD",
+        "price": "6.486",
+        "time": 1685527974775
+    },
+    {
+        "symbol": "UNIUSD_PERP",
+        "ps": "UNIUSD",
+        "price": "5.074",
+        "time": 1685527510654
+    },
+    {
+        "symbol": "CHZUSD_PERP",
+        "ps": "CHZUSD",
+        "price": "0.098700",
+        "time": 1685527963481
+    },
+    {
+        "symbol": "BNBUSD_PERP",
+        "ps": "BNBUSD",
+        "price": "307.320",
+        "time": 1685528024777
+    },
+    {
+        "symbol": "LINKUSD_230929",
+        "ps": "LINKUSD",
+        "price": "6.593",
+        "time": 1685527998462
+    },
+    {
+        "symbol": "ROSEUSD_PERP",
+        "ps": "ROSEUSD",
+        "price": "0.05189",
+        "time": 1685527996404
+    },
+    {
+        "symbol": "LINKUSD_230630",
+        "ps": "LINKUSD",
+        "price": "6.532",
+        "time": 1685527217752
+    },
+    {
+        "symbol": "BNBUSD_230630",
+        "ps": "BNBUSD",
+        "price": "305.160",
+        "time": 1685528011077
+    },
+    {
+        "symbol": "ETHUSD_230630",
+        "ps": "ETHUSD",
+        "price": "1875.59",
+        "time": 1685528006465
+    },
+    {
+        "symbol": "NEARUSD_PERP",
+        "ps": "NEARUSD",
+        "price": "1.572",
+        "time": 1685527975660
+    },
+    {
+        "symbol": "XRPUSD_PERP",
+        "ps": "XRPUSD",
+        "price": "0.5045",
+        "time": 1685528022814
+    },
+    {
+        "symbol": "VETUSD_PERP",
+        "ps": "VETUSD",
+        "price": "0.016140",
+        "time": 1672044821446
+    },
+    {
+        "symbol": "AXSUSD_PERP",
+        "ps": "AXSUSD",
+        "price": "6.9250",
+        "time": 1685528042083
+    },
+    {
+        "symbol": "DOTUSD_230929",
+        "ps": "DOTUSD",
+        "price": "5.309",
+        "time": 1685527191367
+    },
+    {
+        "symbol": "ALGOUSD_PERP",
+        "ps": "ALGOUSD",
+        "price": "0.1479",
+        "time": 1685527958864
+    },
+    {
+        "symbol": "ADAUSD_230630",
+        "ps": "ADAUSD",
+        "price": "0.37550",
+        "time": 1685528032689
+    },
+    {
+        "symbol": "BTCUSD_230630",
+        "ps": "BTCUSD",
+        "price": "27254.2",
+        "time": 1685528047088
+    },
+    {
+        "symbol": "DOTUSD_PERP",
+        "ps": "DOTUSD",
+        "price": "5.317",
+        "time": 1685527999464
+    },
+    {
+        "symbol": "MATICUSD_PERP",
+        "ps": "MATICUSD",
+        "price": "0.8891",
+        "time": 1685528025146
+    },
+    {
+        "symbol": "OPUSD_PERP",
+        "ps": "OPUSD",
+        "price": "1.414100",
+        "time": 1685528035486
+    },
+    {
+        "symbol": "BTCUSD_PERP",
+        "ps": "BTCUSD",
+        "price": "27133.3",
+        "time": 1685528049378
+    },
+    {
+        "symbol": "APEUSD_PERP",
+        "ps": "APEUSD",
+        "price": "3.1210",
+        "time": 1685528039237
+    },
+    {
+        "symbol": "ADAUSD_230929",
+        "ps": "ADAUSD",
+        "price": "0.37670",
+        "time": 1685526937051
+    },
+    {
+        "symbol": "DOTUSD_230630",
+        "ps": "DOTUSD",
+        "price": "5.325",
+        "time": 1685527953732
+    },
+    {
+        "symbol": "BCHUSD_230630",
+        "ps": "BCHUSD",
+        "price": "112.86",
+        "time": 1685525667178
+    },
+    {
+        "symbol": "AAVEUSD_PERP",
+        "ps": "AAVEUSD",
+        "price": "64.570",
+        "time": 1685528011347
+    },
+    {
+        "symbol": "XTZUSD_PERP",
+        "ps": "XTZUSD",
+        "price": "0.9093",
+        "time": 1685527609268
+    },
+    {
+        "symbol": "BCHUSD_230929",
+        "ps": "BCHUSD",
+        "price": "113.24",
+        "time": 1685526060575
+    },
+    {
+        "symbol": "EGLDUSD_PERP",
+        "ps": "EGLDUSD",
+        "price": "36.582",
+        "time": 1685528049641
+    },
+    {
+        "symbol": "BNBUSD_230929",
+        "ps": "BNBUSD",
+        "price": "300.860",
+        "time": 1685528010992
+    },
+    {
+        "symbol": "KNCUSD_PERP",
+        "ps": "KNCUSD",
+        "price": "0.60780",
+        "time": 1685527276123
+    },
+    {
+        "symbol": "GALAUSD_PERP",
+        "ps": "GALAUSD",
+        "price": "0.01833",
+        "time": 1672044991775
+    },
+    {
+        "symbol": "XRPUSD_230929",
+        "ps": "XRPUSD",
+        "price": "0.5099",
+        "time": 1685528022211
+    },
+    {
+        "symbol": "ETCUSD_PERP",
+        "ps": "ETCUSD",
+        "price": "17.981",
+        "time": 1685528003882
+    },
+    {
+        "symbol": "APTUSD_PERP",
+        "ps": "APTUSD",
+        "price": "8.413000",
+        "time": 1685528015486
+    },
+    {
+        "symbol": "ICXUSD_PERP",
+        "ps": "ICXUSD",
+        "price": "0.2410",
+        "time": 1685528039930
+    },
+    {
+        "symbol": "ZILUSD_PERP",
+        "ps": "ZILUSD",
+        "price": "0.019000",
+        "time": 1672044817746
+    },
+    {
+        "symbol": "LTCUSD_230630",
+        "ps": "LTCUSD",
+        "price": "89.48",
+        "time": 1685528047071
+    },
+    {
+        "symbol": "ENSUSD_PERP",
+        "ps": "ENSUSD",
+        "price": "10.019000",
+        "time": 1685527974438
+    },
+    {
+        "symbol": "THETAUSD_PERP",
+        "ps": "THETAUSD",
+        "price": "0.840",
+        "time": 1685527223402
+    },
+    {
+        "symbol": "GMTUSD_PERP",
+        "ps": "GMTUSD",
+        "price": "0.25600",
+        "time": 1685528012844
+    },
+    {
+        "symbol": "ETHUSD_PERP",
+        "ps": "ETHUSD",
+        "price": "1869.77",
+        "time": 1685528053855
+    },
+    {
+        "symbol": "BCHUSD_PERP",
+        "ps": "BCHUSD",
+        "price": "112.77",
+        "time": 1685528047225
+    },
+    {
+        "symbol": "ATOMUSD_PERP",
+        "ps": "ATOMUSD",
+        "price": "10.591",
+        "time": 1685528052720
+    },
+    {
+        "symbol": "XRPUSD_230630",
+        "ps": "XRPUSD",
+        "price": "0.5075",
+        "time": 1685527811192
+    },
+    {
+        "symbol": "DOGEUSD_PERP",
+        "ps": "DOGEUSD",
+        "price": "0.071520",
+        "time": 1685528010545
+    },
+    {
+        "symbol": "LTCUSD_230929",
+        "ps": "LTCUSD",
+        "price": "90.28",
+        "time": 1685528006490
+    },
+    {
+        "symbol": "SOLUSD_PERP",
+        "ps": "SOLUSD",
+        "price": "20.651",
+        "time": 1685528012882
+    },
+    {
+        "symbol": "XLMUSD_PERP",
+        "ps": "XLMUSD",
+        "price": "0.09000",
+        "time": 1685527771009
+    },
+    {
+        "symbol": "LTCUSD_PERP",
+        "ps": "LTCUSD",
+        "price": "89.30",
+        "time": 1685528047383
+    },
+    {
+        "symbol": "SANDUSD_PERP",
+        "ps": "SANDUSD",
+        "price": "0.5376",
+        "time": 1685528013051
+    },
+    {
+        "symbol": "TRXUSD_PERP",
+        "ps": "TRXUSD",
+        "price": "0.07544",
+        "time": 1685528030528
+    },
+    {
+        "symbol": "ADAUSD_PERP",
+        "ps": "ADAUSD",
+        "price": "0.37410",
+        "time": 1685528006383
+    }
+]

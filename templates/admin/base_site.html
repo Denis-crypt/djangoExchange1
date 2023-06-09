@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+{% load for_admin %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+    {% get_count_new_requests_for_output as count_new_requests_for_output %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }} | Новых запросов: {{ count_new_requests_for_output }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
